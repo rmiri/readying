@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: readyng_production
-  username: readyng
-  password: <%= ENV['READYNG_DATABASE_PASSWORD'] %>
+  # database: readyng_production
+  # username: readyng
+  # password: <%= ENV['READYNG_DATABASE_PASSWORD'] %>
+    url: <%= ENV['DATABASE_URL'] %>
